@@ -1,0 +1,108 @@
+header, nav, main, footer {display: block;}
+body {background-color: lightblue;
+	font-family: Arial, Verdana, sans-serif;}
+#wrapper {width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	min-width: 700px;
+	max-width: 1024px;
+	color: black;}
+h1 {text-align: center;
+	font-size: 2.5em;
+	padding: 0;
+	line-height: 150%;}
+nav {font-weight: bold;
+	font-size: 1.5em;
+	float: left;
+	width: 150px;}
+nav ul {list-style-type: none;
+	margin:0;
+	padding: 0;
+	width: auto;
+	background-color: grey;}
+nav li {display: block;
+	color: black;
+	padding: 8px 16px;}
+nav li:hover{background-color: lavender; color: grey;}
+main {margin-left: 180px;
+	padding: 0 0 20px 0;
+	text-align: justify;}
+.tcycle {margin-left: 180px;
+		padding: 0 0 20px 0;
+		width = 850px
+		height = 300px}
+.category {font-weight: bold;
+	background-color: grey;
+	color: black;
+	font-size: 1.5em;}
+table{border: 2px solid darkblue;
+	border-collapse: collapse;
+	background-color: lavender;}
+td, th {padding: 0.80em;
+	border: 1px solid darkblue;}
+img {border-style: none;}
+footer {font-size: 0.7em;
+	font-style: italic;
+	text-align: left;
+	padding: 0;
+	margin-left: 180px;}
+#gallery {position: relative;}
+#gallery ul {width: 300px;
+			list-style-type: none;}
+#gallery li {display: block;
+			float: left;
+			padding: 10px;}
+#gallery span {position: absolute;
+				left: -1000px;
+				opacity: 0;
+				transition: opacity 3s ease-in-out;}
+#gallery a:hover span {position: absolute;
+						top: 10px;
+						left: 320px;
+						text-align: center;
+						opacity: 1;}
+#mobile {display: none;}
+#desktop {display: inline;}
+@media only screen and (max-width: 1024px) { 
+body {margin: 0;
+	padding: 0;
+	background-color: lightblue;}
+#wrapper {width: auto;
+		min-width: 0;
+		margin: 0;}
+.tcycle {width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;}
+h1 {margin: 0;
+	text-align: center;
+	font-size: 2em;
+	line-height: 200%;}
+nav {float: none;
+	width: auto;
+	height: auto;}
+nav li {display: inline-block;}
+nav a {padding: 1em;
+	border-style: none;
+	font-size: 1em;}
+nav ul {text-align: center;
+	padding: 0;
+	margin: 0;}
+main {margin: 0;
+	padding: 0 1em 0 1em;
+	font-size: 90%;}
+footer {margin: 15px;}
+}
+
+@media only screen and (max-width: 768px) {
+h1 {font-size: 2em;
+	line-height: 120%;}
+nav a {display: block;
+	padding: 0.2em;
+	font-size: 1em;
+	border-bottom: 1px darkblue;}
+nav li {display: block;}
+nav ul {text-align: center;}
+main {padding: 0 0 0 0.4em;}
+footer {padding: 0;}
+}
